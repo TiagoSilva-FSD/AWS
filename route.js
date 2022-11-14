@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 
 // Cadastrar
 router.post('/creat', (req, res) => {
-    let secret = "djcfRdyB34";
+    let secret = "djcccfRdyB34";
     let key = req.body.auth;
     if (key === secret && database.length < 20) {
         let dados = req.body;
@@ -35,7 +35,7 @@ router.post('/creat', (req, res) => {
 
 // Listar
 router.post('/doc', (req, res) => {
-    let secret = "djcfRdyB34";
+    let secret = "djcccfRdyB34";
     let key = req.body.auth;
     if (key === secret) {
         let data = JSON.stringify(database);
@@ -48,7 +48,7 @@ router.post('/doc', (req, res) => {
 
 // Deletar
 router.post('/del', (req, res) => {
-    let secret = "djcfRdyB34";
+    let secret = "djcccfRdyB34";
     let key = req.body.auth;
     if (key === secret) {
         while(database.length > 0){
